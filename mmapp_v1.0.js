@@ -205,6 +205,38 @@ function e(t, i, n) {
                 m = o.getBaseUrl();
                 n.support(n.act.d) ? (d = m + c.jump + encodeURIComponent(e) + (t ? "&appname=" + r.getCurrentBs() : ""), i.iframe(d)) : i.run(d, !0)
             },
+            openDownload: function(e, t) {
+                var i = this,
+                n = l,
+                r = p,
+                t = t || s.showtitle,
+                a = i.reqUrl,
+                c = i.reqMethod,
+                //d = a.launch + encodeURIComponent(e),
+                m = o.getBaseUrl();
+                d = m + c.jump + encodeURIComponent(e) + (t ? "&appname=" + r.getCurrentBs() : "");
+                i.iframe(d);
+            },
+            openCall: function(e, t) {
+                var i = this,
+                n = l,
+                r = p,
+                t = t || s.showtitle,
+                a = i.reqUrl,
+                c = i.reqMethod,
+                d = a.launch + encodeURIComponent(e);
+                i.run(d, !0);
+            },
+            openCall1: function(e, t) {
+                var i = this,
+                n = l,
+                r = p,
+                t = t || s.showtitle,
+                a = i.reqUrl,
+                c = i.reqMethod,
+                d = a.launch + encodeURIComponent(e);
+                i.iframe(d);
+            },
             batchDownload: function(e) {
                 this.download(e, "", l.act.b)
             },

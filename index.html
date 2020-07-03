@@ -8,7 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div onclick="dlMMApp()">点击进行MM下载或打开</div>
+    <div onclick="dlMMApp1()">点击进行MM下载或打开openDownload</div>
+    <div onclick="dlMMApp2()">点击进行MM下载或打开openCall</div>
+    <div onclick="dlMMApp3()">点击进行MM下载或打开openCall1</div>
 </body>
 <script>
     var vConsole = new VConsole();
@@ -17,8 +19,14 @@
         showtitle:true,//true：显示；false：隐藏
         channelid:5410093632 //a.l0086.cn 默认使用渠道ID：5410093632
     })
-    function dlMMApp(){
-        mm.open('http://h5.mmarket.com/pps_webh5/MMtransfer/change.html?withmminfo=3c98', true);
+    function dlMMApp1(){
+        mm.openDownload('http://h5.mmarket.com/pps_webh5/MMtransfer/change.html?withmminfo=3c98', true);
+    }
+    function dlMMApp2(){
+        mm.openCall('http://h5.mmarket.com/pps_webh5/MMtransfer/change.html?withmminfo=3c98', true);
+    }
+    function dlMMApp3(){
+        mm.openCall1('http://h5.mmarket.com/pps_webh5/MMtransfer/change.html?withmminfo=3c98', true);
     }
     </script>
 </html>
