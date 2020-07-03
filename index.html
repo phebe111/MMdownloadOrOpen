@@ -12,6 +12,10 @@
 </body>
 <script>
     var vConsole = new VConsole();
+    mm.init({
+        showtitle:true,//true：显示；false：隐藏
+        channelid:5410093632 //a.l0086.cn 默认使用渠道ID：5410093632
+    })
     function dlMMApp(){
         mm.open('http://h5.mmarket.com/pps_webh5/MMtransfer/change.html?withmminfo=3c98', true);
     }
