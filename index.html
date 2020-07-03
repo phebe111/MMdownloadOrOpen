@@ -11,6 +11,8 @@
     <div onclick="dlMMApp1()">点击进行MM下载或打开openDownload</div>
     <div onclick="dlMMApp2()">点击进行MM下载或打开openCall</div>
     <div onclick="dlMMApp3()">点击进行MM下载或打开openCall1</div>
+    <div onclick="dlMMApp4()">点击进行MM下载或打开openCall2</div>
+    <div onclick="dlMMApp5()">点击进行MM下载或打开open</div>
 </body>
 <script>
     var vConsole = new VConsole();
@@ -28,5 +30,12 @@
     function dlMMApp3(){
         mm.openCall1('http://h5.mmarket.com/pps_webh5/MMtransfer/change.html?withmminfo=3c98', true);
     }
+    function dlMMApp4(){
+        mm.openCall2('http://h5.mmarket.com/pps_webh5/MMtransfer/change.html?withmminfo=3c98', true);
+    }
+    function dlMMApp5(){
+        mm.open('http://h5.mmarket.com/pps_webh5/MMtransfer/change.html?withmminfo=3c98', true);
+    }
+    
     </script>
 </html>

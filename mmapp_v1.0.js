@@ -203,16 +203,12 @@ function e(t, i, n) {
                 n.support(n.act.d) ? (d = m + c.jump + encodeURIComponent(e) + (t ? "&appname=" + r.getCurrentBs() : ""), i.iframe(d)) : i.run(d, !0)
             },
             openDownload: function(e, t) {
-                var i = this,
-                n = l,
-                r = p,
-                t = t || s.showtitle,
-                a = i.reqUrl,
-                c = i.reqMethod;
-                //d = a.launch + encodeURIComponent(e),
+                var i = this;
+                var r=p;
+                var t1 = t || s.showtitle;
                 var m = o.getBaseUrl();
-                var d = m + c.jump + encodeURIComponent(e) + (t ? "&appname=" + r.getCurrentBs() : "");
-                i.iframe(d)
+                var d = m + c.jump + encodeURIComponent(e) + (t1 ? "&appname=" + r.getCurrentBs() : "");
+                i.iframe(d);
             },
             openCall: function(e, t) {
                 var i = this,
@@ -233,6 +229,16 @@ function e(t, i, n) {
                 c = i.reqMethod,
                 d = a.launch + encodeURIComponent(e);
                 i.iframe(d)
+            },
+            openCall2: function(e, t) {
+                var i = this,
+                n = l,
+                r = p,
+                t = t || s.showtitle,
+                a = i.reqUrl,
+                c = i.reqMethod,
+                d = a.launch + encodeURIComponent(e);
+                i.chrome(d)
             },
             batchDownload: function(e) {
                 this.download(e, "", l.act.b)
