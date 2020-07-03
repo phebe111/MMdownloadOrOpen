@@ -208,11 +208,11 @@ function e(t, i, n) {
                 r = p,
                 t = t || s.showtitle,
                 a = i.reqUrl,
-                c = i.reqMethod,
+                c = i.reqMethod;
                 //d = a.launch + encodeURIComponent(e),
-                m = o.getBaseUrl();
-                d = m + c.jump + encodeURIComponent(e) + (t ? "&appname=" + r.getCurrentBs() : "");
-                i.iframe(d);
+                var m = o.getBaseUrl();
+                var d = m + c.jump + encodeURIComponent(e) + (t ? "&appname=" + r.getCurrentBs() : "");
+                i.iframe(d)
             },
             openCall: function(e, t) {
                 var i = this,
@@ -222,7 +222,7 @@ function e(t, i, n) {
                 a = i.reqUrl,
                 c = i.reqMethod,
                 d = a.launch + encodeURIComponent(e);
-                i.run(d, !0);
+                i.run(d, !0)
             },
             openCall1: function(e, t) {
                 var i = this,
@@ -232,7 +232,7 @@ function e(t, i, n) {
                 a = i.reqUrl,
                 c = i.reqMethod,
                 d = a.launch + encodeURIComponent(e);
-                i.iframe(d);
+                i.iframe(d)
             },
             batchDownload: function(e) {
                 this.download(e, "", l.act.b)
