@@ -192,9 +192,6 @@ function e(t, i, n) {
                 2e3)
             },
             open: function(e, t) {
-                console.log("111")
-                console.log(e)
-                console.log(t)
                 var i = this,
                 n = l,
                 r = p,
@@ -983,6 +980,18 @@ function e(t, i, n) {
                     void 0 === t && (t = !0),
                     r.trigger("server.check.start", "open", e, t)
                 },
+                openDownload: function(e, t) {
+                    void 0 === t && (t = !0),
+                    r.trigger("server.check.start", "openDownload", e, t)
+                },
+                openCall: function(e, t) {
+                    void 0 === t && (t = !0),
+                    r.trigger("server.check.start", "openCall", e, t)
+                },
+                openCall1: function(e, t) {
+                    void 0 === t && (t = !0),
+                    r.trigger("server.check.start", "openCall1", e, t)
+                },
                 batchDownload: function(e) {
                     var t = this;
                     if ("undefined" != typeof e && "" != e) {
@@ -1035,7 +1044,7 @@ function e(t, i, n) {
                     }
                 }
             },
-            a.each(["download", "detail", "open", "batchDownload"],
+            a.each(["download", "detail", "open", "batchDownload","openDownload","openCall","openCall1"],
             function(t) {
                 var i = s.browserUtil,
                 n = i.isIOS(),
